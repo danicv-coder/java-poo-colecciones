@@ -1,4 +1,4 @@
-package colecciones;
+package colecciones.list;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -22,7 +22,7 @@ public class EjemploListComparableComparator {
 		al.add(new Alumno(16, "Carlos"));
 		al.add(new Alumno(12, "Eurelio"));
 		al.add(new Alumno(16, "Daniel"));
-		
+
 //		Collections.sort(al, (a, b) -> {
 //			return a.getNombre().compareTo(b.getNombre());
 //		});
@@ -30,6 +30,7 @@ public class EjemploListComparableComparator {
 //		al.sort((a, b) ->{
 //			return a.getNombre().compareTo(b.getNombre());
 //		});
+		// OTRA FORMA DE HACERLO
 		al.sort(Comparator.comparing((Alumno a) -> a.getNota()));
 		System.out.println(al);
 		al.forEach(System.out::println);

@@ -1,4 +1,4 @@
-package colecciones;
+package colecciones.set;
 
 import java.util.Iterator;
 import java.util.Set;
